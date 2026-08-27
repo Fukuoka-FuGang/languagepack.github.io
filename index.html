@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf‑8">
+<title>文本文档</title>
+<style>
+pre{white‑space:pre‑wrap;font‑family:monospace;font‑size:14px;padding:16px;}
+</style>
+</head>
+<body>
+<pre id="content"></pre>
+<script>
+fetch("./customlanguagepack.txt")
+.then(res=>res.text())
+.then(text=>document.getElementById("content").innerText=text);
+</script>
+</body>
+</html>
